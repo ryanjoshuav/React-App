@@ -7,7 +7,7 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link to={"/React-App/"}>Home</Link>
           </li>
           <li>
             <Link to={"post"}>Post</Link>
