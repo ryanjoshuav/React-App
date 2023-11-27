@@ -8,7 +8,7 @@ import EditPostForm from "./features/posts/EditPostForm";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/React-App/" element={<Layout />}>
         <Route index element={<PostsLists />} />
 
         <Route path="post">

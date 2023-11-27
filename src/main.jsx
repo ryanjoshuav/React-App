@@ -5,7 +5,7 @@ import "./index.css";
 import { store } from "./app/store.js";
 import { Provider } from "react-redux";
 import { fetchUsers } from "./features/users/usersSlice.js";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { fetchPosts } from "./features/posts/postsSlice.js";
 
 store.dispatch(fetchUsers());
@@ -15,7 +15,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <App />
+        <Routes>
+          <Route path="/*" element={<App />} />
+        </Routes>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>
